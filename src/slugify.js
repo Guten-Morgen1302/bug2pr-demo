@@ -2,6 +2,6 @@
 export function slugify(title) {
   return String(title)
     .toLowerCase()
-    .replace(/[^p{L}p{N}]+/gu, '-')
+    .replace(/[^\p{L}\p{N}]+/gu, '-')
     .replace(/^-+|-+$/g, '');
 }
